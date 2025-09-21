@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Web Terminal</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #command-dropdown { z-index: 1000; width: 200px; }
+    #terminal { position: relative; }
+    #nano-editor { display:none; position:absolute; top:20%; left:20%; background:#222; color:#fff; padding:10px; z-index:2000; }
+  </style>
+</head>
+<body>
+  <div id="head">
+    <h1>Python-Based Terminal</h1>
+  </div>
+
+  <div id="terminal">
+    <div id="output"></div>
+    <div id="prompt-line">
+      <span id="prompt">/</span>
+      <input id="cmd" autocomplete="off" autofocus />
+    </div>
+  </div>
+
+  <div id="nano-editor">
+    <h4 id="nano-filename"></h4>
+    <textarea id="nano-content" rows="10" cols="50"></textarea><br>
+    <button onclick="saveNano()">Save</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

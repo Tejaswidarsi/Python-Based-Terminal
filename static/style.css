@@ -1,0 +1,52 @@
+body { 
+  background: #0b0f12; 
+  color: #c7f9cc; 
+  font-family: monospace; 
+  margin: 0; 
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers content horizontally */
+  justify-content: flex-start; 
+  padding: 20px; 
+}
+
+#head { 
+  text-align: center; 
+  margin-bottom: 20px;   /* space between heading & terminal */
+}
+
+#terminal { 
+  width: 90%; 
+  max-width:900px; 
+  background:#071019; 
+  padding:16px; 
+  border-radius:8px; 
+  box-shadow:0 6px 18px rgba(0,0,0,0.5); 
+}
+
+#output { 
+  white-space:pre-wrap; 
+  min-height:300px; 
+  margin-bottom:8px; 
+}
+
+#prompt-line { 
+  display:flex; 
+  gap:8px; 
+  align-items:center; 
+}
+
+#prompt { 
+  color:#7efc9a; 
+}
+
+#cmd { 
+  background:transparent; 
+  border:none; 
+  outline:none; 
+  color:inherit; 
+  font-family:inherit; 
+  font-size:1rem; 
+  width:100%; 
+}
